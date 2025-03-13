@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CovPneumoAI: تدريب النموذج</title>
+    <link href="../static/css/package/dist/tailwind.min.css" rel="stylesheet">
+    <link href="../static/css/webfonts/fontawesome-free-6.5.2-web/css/all.css" rel="stylesheet">
+    <link href="../static/css/font.css" rel="stylesheet">
+
+</head>
+<body class="bg-gradient-to-r from-blue-100 to-blue-300" dir="rtl">
+<main>
+    <!-- Main Container -->
+    <div class="min-h-screen flex flex-col justify-center items-center p-6">
+        
+        <!-- Header Section -->
+        <header class="text-center mb-8" dir="ltr">
+            <h1 class="text-4xl font-bold text-blue-800">CovPneumoAI  تدريب النموذج</h1>
+            <p class="text-lg mt-2 text-gray-700">اتبع الخطوات التالية لتدريب نموذج الذكاء الاصطناعي الخاص بك على تشخيص الأمراض.</p>
+        </header>
+
+        <!-- Steps Section -->
+        <section class="max-w-4xl w-full bg-white rounded-lg shadow-lg p-8">
+            <div class="space-y-8">
+                <!-- Step 1 -->
+                <div class="flex flex-col sm:flex-row items-center gap-6">
+                    <div class="flex-shrink-0">
+                        <span class="text-2xl font-bold text-blue-600 bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center">1</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">قم بإعداد مجموعة البيانات الخاصة بك</h2>
+                        <p class="text-gray-600">
+                            اجمع مجموعة بيانات من الصور مصنفة في مجلدات. يجب أن يمثل كل مجلد فئة معينة، مثل أنواع السرطان أو الأورام أو مراحلها.
+                        </p>
+                        <img src="images/1.jpg" alt="Dataset Structure" class="mt-4 rounded-lg shadow-md" style="width: 50%;">
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex flex-col sm:flex-row items-center gap-6">
+                    <div class="flex-shrink-0">
+                        <span class="text-2xl font-bold text-blue-600 bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center">2</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">إضافة مجموعة البيانات إلى مجلد الصور</h2>
+                        <p class="text-gray-600">
+                            أضف مجلد مجموعة البيانات إلى <code>image</code> المجلد في دليل المشروع.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex flex-col sm:flex-row items-center gap-6">
+                    <div class="flex-shrink-0">
+                        <span class="text-2xl font-bold text-blue-600 bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center">3</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">تشغيل البرنامج النصي للاختبار</h2>
+                        <p class="text-gray-600">
+                            انقر نقر مزدوج <code>run.bat</code> لبدء عملية الاختبار. اختر الخيار <strong>1</strong> من القائمة.
+                        </p>
+                        <img src="images/2.JPG" alt="Run BAT File - Option 1" class="mt-4 rounded-lg shadow-md">
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="flex flex-col sm:flex-row items-center gap-6">
+                    <div class="flex-shrink-0">
+                        <span class="text-2xl font-bold text-blue-600 bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center">4</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">حدد خيار التدريب</h2>
+                        <p class="text-gray-600">
+                            اختر الخيار <strong>1</strong> من القائمة لبدء عملية التدريب.
+                        </p>
+                        <img src="images/3.JPG" alt="Training Option" class="mt-4 rounded-lg shadow-md">
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="flex flex-col sm:flex-row items-center gap-6">
+                    <div class="flex-shrink-0">
+                        <span class="text-2xl font-bold text-blue-600 bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center">5</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">اسم المرض أو نوعه</h2>
+                        <p class="text-gray-600">
+                            أدخل اسمًا للمرض أو النوع الذي تدرب النموذج عليه.
+                        </p>
+                        <img src="images/4.JPG" alt="Name Disease" class="mt-4 rounded-lg shadow-md">
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="flex flex-col sm:flex-row items-center gap-6">
+                    <div class="flex-shrink-0">
+                        <span class="text-2xl font-bold text-blue-600 bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center">6</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">حدد مجلد الصورة الرئيسي</h2>
+                        <p class="text-gray-600">
+                            حدد مجلد الصورة الرئيسي الذي أضفته إلى <code>image</code> المجلد. سيقوم النظام باستخراج المجلدات الفرعية كفئات للتصنيف.
+                        </p>
+                        <img src="images/5.JPG" alt="Select Folder" class="mt-4 rounded-lg shadow-md">
+                    </div>
+                </div>
+
+                <!-- Step 7 -->
+                <div class="flex flex-col sm:flex-row items-center gap-6">
+                    <div class="flex-shrink-0">
+                        <span class="text-2xl font-bold text-blue-600 bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center">7</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">عملية التدريب</h2>
+                        <p class="text-gray-600">
+                            سيتدرب النظام على الصور في كل فئة. في نهاية التدريب، سيُنتج ملفين:
+                            <ul class="list-disc list-inside mt-2 text-gray-600">
+                                <li> <b> <code>model.kreas</code> </b>: يحتوي على معلومات التدريب.</li>
+                                <li> <b> <code>model.csv</code> </b>: يحتوي على بيانات وصفية حول عملية التدريب.</li>
+                            </ul>
+                        </p>
+                        <img src="images/6.JPG" alt="Training Process" class="mt-4 rounded-lg shadow-md">
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center gap-6">
+                    <div class="flex-shrink-0">
+                        <span class="text-2xl font-bold text-blue-600 bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center">8</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">نتائج التدريب</h2>
+                        <p class="text-gray-600">
+                            سيظهر في نهاية التدريب النتائج التي حصل عليها النموذج اثناء التدريب والاختبار على شكب مخطط بياني 
+                            كما سيظهر نسبة الدقة التي حققه النموذج في التنبوء على البيانات الصور التي تم تدريبه علبه ونسبة الخسارة (التي تشير الى التنبوء الغير صحيح )
+                        </p>
+                    <p>تعتمد دقة التنبوء الصجيحة على دقة تصنيف البيانات الصور وعلى كمية البيانات</p>
+                        <img src="images/54.JPG" alt="Training Process" class="mt-4 rounded-lg shadow-md">
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Back to Home Link -->
+        <div class="text-center mt-8" dir="ltr">
+            <a href="index.html" class="text-blue-600 hover:text-blue-800 font-semibold">
+                <i class="fas fa-arrow-left mr-2"></i>العودة إلى الصفحة الرئيسية
+            </a>
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="text-center mt-12 text-sm text-gray-600">
+            <p>&copy; 2025 CovPneumoAI. جميع الحقوق محفوضة.</p>
+        </footer>
+    </div>
+</main>
+    <!-- FontAwesome for icons -->
+</body>
+</html>

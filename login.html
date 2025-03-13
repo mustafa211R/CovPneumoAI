@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CovPneumoAI</title>
+    <link href="../static/css/package/dist/tailwind.min.css" rel="stylesheet">
+    <link href="../static/css/webfonts/fontawesome-free-6.5.2-web/css/all.css" rel="stylesheet">
+    <link href="../static/css/font.css" rel="stylesheet">
+
+</head>
+<body class="bg-gradient-to-r from-blue-100 to-blue-300" dir="rtl">
+<main>
+    <!-- Main Container -->
+    <div class="min-h-screen flex flex-col justify-center items-center p-6">
+        
+        <!-- Header Section -->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-blue-800">CovPneumoAI<br> تحليل صور الرئة واكتشاف فيروس كورونا والالتهاب الرئوي الفيروسي</h1>
+            <p class="text-lg mt-2 text-gray-700">إحداث ثورة في الرعاية الصحية من خلال تحليل الصور باستخدام الذكاء الاصطناعي.</p>
+        </header>
+
+        <!-- About Section -->
+        <section class="text-center mb-8 max-w-3xl px-4">
+            <p class="text-lg text-gray-600">
+                مرحبًا بكم في CovPneumoAI ، نظام ذكاء اصطناعي متقدم مصمم لتشخيص الأمراض الرئة ، وخاصةً السرطان، من خلال تحليل الصور الطبية.             </p>
+        </section>
+
+        <!-- Model Selection Section -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mb-8">
+            <!-- Model Training Container -->
+            <div class="flex justify-center items-center">
+                <div onclick="location.href='Training_help.html'" class="w-64 h-64 bg-white rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 cursor-pointer border-4 border-blue-500 hover:bg-blue-50">
+                    <div class="flex flex-col justify-center items-center h-full p-6">
+                        <i class="fas fa-cogs text-4xl text-blue-600 mb-4"></i>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">تدريب النموذج</h2>
+                        <p class="text-center text-sm text-gray-600">قم بتدريب نموذج الذكاء الاصطناعي باستخدام مجموعات البيانات الجديدة لتحسين دقة التشخيص.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Model Testing Container -->
+            <div class="flex justify-center items-center">
+                <div onclick="location.href='test_help.html'" class="w-64 h-64 bg-white rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 cursor-pointer border-4 border-green-500 hover:bg-green-50">
+                    <div class="flex flex-col justify-center items-center h-full p-6">
+                        <i class="fas fa-vial text-4xl text-green-600 mb-4"></i>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">اختبار النموذج</h2>
+                        <p class="text-center text-sm text-gray-600">اختبار نموذج الذكاء الاصطناعي المدرب باستخدام الصور الطبية للكشف عن الأمراض.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="text-center mt-12 text-sm text-gray-600">
+            <p>&copy; 2025 CellGuard. جميع الحقوق محفوضة.</p>
+        </footer>
+    </div>
+</main>
+    <!-- FontAwesome for icons -->
+</body>
+</html>
